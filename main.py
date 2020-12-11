@@ -1,5 +1,5 @@
 import pygame
-from Proyectil import *
+from Projectile import *
 from Tank import *
 
 BLACK = (0, 0, 0)

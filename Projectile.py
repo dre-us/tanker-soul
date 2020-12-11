@@ -6,7 +6,7 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 
-class Proyectil(object):
+class Projectile(object):
 
     def __init__(self, x, y, vx, vy, radius):
         self.g = 9.8
@@ -18,6 +18,9 @@ class Proyectil(object):
         self.x = self.xi
         self.y = self.yi
         self.radius = radius
+        self.width = 100
+        self.heigth = 74
+        self.damage = 50
 
     def update(self):
         self.t += 0.15

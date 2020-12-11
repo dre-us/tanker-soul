@@ -1,6 +1,6 @@
 import pygame
 from math import sin, cos, pi
-from Proyectil import *
+from Projectile import *
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -17,6 +17,8 @@ class Tank(object):
         self.weast = -1
         self.width = 80
         self.heigth = 80
+        self.health = 100
+        self.momentum = 80
         self.speed_angle = 0
         self.field = field
         self.width_map = width
@@ -35,9 +37,9 @@ class Tank(object):
     def shot(self):
         radians = self.angle * pi / 180
         if self.direction == self.east:
-            return Proyectil(self.x+45, self.y-self.width, 50*cos(radians), 10*sin(radians), 5)
+            return Projectile(self.x+45, self.y-self.width, self.momentum*cos(radians), self.momentum*sin(radians), 5)
         else:
-            return Proyectil(self.x-45, self.y-self.width, -50*cos(radians), 10*sin(radians), 5)
+            return Projectile(self.x-45, self.y-self.width, -self.momentum*cos(radians), self.momentum*sin(radians), 5)
     
     def update(self):
         if self.speed != 0:

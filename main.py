@@ -9,11 +9,11 @@ RED = (255, 0, 0)
 BLUE = (0, 0, 255)
 GRAY = (37, 37, 38)
 WIDTH = 800
-HEIGTH = 600
+HEIGHT = 600
 
 
 pygame.init()
-screen = pygame.display.set_mode((WIDTH, HEIGTH))
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
 screen.fill(GRAY)

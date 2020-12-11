@@ -19,7 +19,7 @@ class Projectile(object):
         self.y = self.yi
         self.radius = radius
         self.width = 100
-        self.heigth = 74
+        self.height = 74
         self.damage = 50
 
     def update(self):

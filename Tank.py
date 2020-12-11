@@ -10,19 +10,19 @@ BLUE = (0, 0, 255)
 
 class Tank(object):
 
-    def __init__(self, field, heigth, width):
+    def __init__(self, field, height, width):
         self.speed = 0
         self.angle = 0
         self.east = 1
         self.weast = -1
         self.width = 80
-        self.heigth = 80
+        self.height = 80
         self.health = 100
         self.momentum = 80
         self.speed_angle = 0
         self.field = field
         self.width_map = width
-        self.heigth_map = heigth
+        self.height_map = height
         self.x = self.width//2
         self.direction = self.east
         self.delta_x = self.width_map//(len(self.field)-1)
@@ -85,4 +85,4 @@ class Tank(object):
         return pos_y
 
     def draw(self, surface):
-        surface.blit(self.image, (self.x-self.width//2, self.y-self.heigth))
+        surface.blit(self.image, (self.x-self.width//2, self.y-self.height))

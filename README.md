@@ -1,6 +1,7 @@
 # tanker-soul
 
-This is a battle tank game where you have a lot of worlds to play.
+This is a battle tank game where you have a lot of worlds to play.<br>
+to try this game you must download the folder and run main.py (you should have installed pygame)
 
 ## worlds
 One world is modeling by a vector o positions, where each component is the height of the ground, changing the vector will change the world.

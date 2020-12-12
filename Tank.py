@@ -28,8 +28,8 @@ class Tank(object):
         self.delta_x = self.width_map//(len(self.field)-1)
         self.y = self.calculate_y(self.x, 1)
 
-        self.image_rigth = pygame.image.load("tank.png").convert()
-        self.image_left = pygame.image.load("tank2.png").convert()
+        self.image_rigth = pygame.image.load("images/tank.png").convert()
+        self.image_left = pygame.image.load("images/tank2.png").convert()
         self.image_rigth.set_colorkey(BLACK)
         self.image_left.set_colorkey(BLACK)
         self.image = self.image_rigth

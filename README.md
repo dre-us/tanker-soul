@@ -4,16 +4,16 @@ This is a battle tank game where you have a lot of worlds to play.<br>
 to try this game you must download the folder and run main.py (you should have installed pygame)
 
 ## worlds
-One world is modeling by a vector of positions, where each component is the height of the ground, changing the vector will change the world.
+A world was modeling by a vector of positions, where each component vector is the height from the ground, changing the vector will change the world.
 The floor was built using the linear equation of a straight applied to adjacents points in the world vector.
 
 ## tank
-Each tank has its own velocity, health and its own (and maybe) unique way of shotting.
-shotting can be doing with diferents angles.
+A tank has its own velocity, health and its own (and maybe) unique way of shotting.
+Shotting can be doing with differents angles.
 
 ## projectile
 It was implemented with the equation of projectile motion.
-Each projectile has a certain amount of damage when this impacts another tank.
+A projectile make a certain amount of damage when it impacts another tank.
 
 ## movements
 
